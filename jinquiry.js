@@ -58,18 +58,18 @@
 
 
 //start of hard
-// function add(){
+// function add(num1,num2){
 //    return num1 + num2
     
 // }
-// function subtract(){
+// function subtract(num1,num2){
 //    return num1 - num2
 // }
-// function multiply(){
+// function multiply(num1,num2){
 //    return num1 * num2
      
 // }
-// function divide(){
+// function divide(num1,num2){
 //     return num1 / num2
 // }
 // end of hard
