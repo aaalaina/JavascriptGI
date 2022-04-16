@@ -79,34 +79,37 @@ function divide(){
 // and then uses the functions created in the hard challenge to output the value in sentence form. Example output: "3 + 4 = 7"
 
 // Consider using loops and arrays(?)
-var num1 = window.prompt("Enter a number: ")
-var operatorInput = window.prompt("Do you want to add, subtract, multiply, or divide? Use the corresponding operator.")
+var num1 = prompt("Enter a number: ")
+var operatorInput = prompt("Do you want to add, subtract, multiply, or divide? Use the corresponding operator.")
 
 if (userInput = "+") {
-    var num2 = window.prompt("Second Number: ")
+    var num2 = prompt("Second Number: ")
 
-    add(num1,num2)
-    // let sum= parseInt(num1) + parseInt(num2) 
+   let sum = add(num1,num2)
+    // let sum= parseInt(num1) + parseInt(num2)
+    console.log(num1 + " + " + num2 + " = " + sum) 
 }
 else if (userInput = "-") {
     
-    var num2 = window.prompt("Num2: ")
+    var num2 = prompt("Second Number: ")
 
-    subtract(num1,num2)
+    let difference = subtract(num1,num2)
     // let difference = parseInt(num1) - parseInt(num2)
-    alert("Your answer is " + difference)}
+    console.log(num1 + " - " + num2 + " = " + difference)
+}
 else if (userInput = "*") { 
 
-    var num2 = window.prompt("Num2: ")
+    var num2 = prompt("Second Number: ")
 
     
-    multiply(num1,num2)
-    alert("Your answer is " + product)
+  let product =  multiply(num1,num2)
+  console.log(num1 + " * " + num2 + " = " + product)
 }
 else if (userInput = "/") {
     
-    var num2 = window.prompt("Num2: ") 
+    var num2 = prompt("Second Number: ") 
 
     
-    divide(num1,num2)
-    alert("Your answer is " + quotient)};
+    let quotient = divide(num1,num2)
+    console.log(num1 + " + " + num2 + " = " + quotient)
+};
