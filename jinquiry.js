@@ -58,20 +58,20 @@
 
 
 //start of hard
-function add(){
-   return parseInt(num1) + parseInt(num2)
+// function add(){
+//    return num1 + num2
     
-}
-function subtract(){
-   return parseInt(num1) - parseInt(num2)
-}
-function multiply(){
-   return parseInt(num1) * parseInt(num2)
+// }
+// function subtract(){
+//    return num1 - num2
+// }
+// function multiply(){
+//    return num1 * num2
      
-}
-function divide(){
-    return parseInt(num1) / parseInt(num2)
-}
+// }
+// function divide(){
+//     return num1 / num2
+// }
 // end of hard
 
 
@@ -79,36 +79,45 @@ function divide(){
 // and then uses the functions created in the hard challenge to output the value in sentence form. Example output: "3 + 4 = 7"
 
 // start of very hard
-let num1 = prompt("Enter a number: ")
-const userInput = prompt("Do you want to add, subtract, multiply, or divide? Use the corresponding operator.")
+let a = prompt("Enter a number: ")
+var userInput = prompt("Do you want to add, subtract, multiply, or divide? Use the corresponding operator.")
+let b = prompt("Second Number: ")
+a = parseInt(a)
+b = parseInt(b)
 
-if (userInput = "+") {
-    var num2 = prompt("Second Number: ")
+function add(num1,num2){
+    return num1 + num2
+     
+ }
+ function subtract(num1,num2){
+    return num1 - num2
+ }
+ function multiply(num1,num2){
+    return num1 * num2
+      
+ }
+ function divide(num1,num2){
+     return num1 / num2
+ }
 
-   const sum = add(num1,num2)
-    console.log(num1 + " + " + num2 + " = " + sum) 
+if (userInput == "+") {
+    
+    sum = add(a,b)
+    console.log(a + " + " + b + " = " + sum) 
 }
-else if (userInput = "-") {
+else if (userInput == "-") {
     
-    var num2 = prompt("Second Number: ")
-
-    const difference = subtract(num1,num2)
-    console.log(num1 + " - " + num2 + " = " + difference)
+    difference = subtract(a,b)
+    console.log(a + " - " + b + " = " + difference)
 }
-else if (userInput = "*") { 
-
-    var num2 = prompt("Second Number: ")
-
+else if (userInput == "*") { 
     
-    const product =  multiply(num1,num2)
-  console.log(num1 + " * " + num2 + " = " + product)
+    product =  multiply(a,b)
+  console.log(a + " * " + b + " = " + product)
 }
-else if (userInput = "/") {
+else if (userInput == "/") {
     
-    var num2 = prompt("Second Number: ") 
-
-    
-    const quotient = divide(num1,num2)
-    console.log(num1 + " / " + num2 + " = " + quotient)
+    quotient = divide(a,b)
+    console.log(a + " / " + b + " = " + quotient)
 };
 // end of very hard
