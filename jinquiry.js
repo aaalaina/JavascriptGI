@@ -18,39 +18,46 @@
 
 
 //beginning of easy
-let firstPerson = "Tia"
-let secondPerson = "Tamera"
-// st is short for string
-let st1 = firstPerson.length;
-let st2 = secondPerson.length;
-if (st1 > st2) {
-let nameD = st1 - st2
-console.log("The name " + firstPerson + " is longer than " + secondPerson + " by " + nameD + " characters.")
-}
-else {
-    let nameD = st2 - st1
-    console.log("The name " + secondPerson + " is longer than " + firstPerson + " by " + nameD + " characters.")
-};
+// let firstPerson = "Tia"
+// let secondPerson = "Tamera"
+// // st is short for string
+// let st1 = firstPerson.length;
+// let st2 = secondPerson.length;
+// if (st1 > st2) {
+// let nameD = st1 - st2
+// console.log("The name " + firstPerson + " is longer than " + secondPerson + " by " + nameD + " characters.")
+// }
+// else {
+//     let nameD = st2 - st1
+//     console.log("The name " + secondPerson + " is longer than " + firstPerson + " by " + nameD + " characters.")
+// };
 // end of easy
 
 
 // M: Write a program to tell if someone is shouting (typing in all caps), whispering (typing in all lowercase), or neither. 
 // Use prompt to get user input, and then console log whether the user was shouting, whispering, or talking normally.
 
-let userTypes = prompt("Type something.");
 
-if (userTypes === userTypes.toUpperCase()){
-console.log("You are shouting!");
-}
-else if (userTypes === userTypes.toLowerCase()){
-console.log("You're whispering...")
-}
-else {
-console.log("You're talking at a normal volume.")
-}
+//start of medium
+// let userTypes = prompt("Type something.");
+
+// if (userTypes === userTypes.toUpperCase()){
+// console.log("You are shouting!");
+// }
+// else if (userTypes === userTypes.toLowerCase()){
+// console.log("You're whispering...")
+// }
+// else {
+// console.log("You're talking at a normal volume.")
+// }
+// end of medium
+
+
 // H: Create 4 math functions, one called add() that adds 2 numbers, one called subtract() that subtracts 2 numbers, one called 
 // multiply() to multiply 2 numbers, and one called divide() to divide two numbers.
 
+
+//start of hard
 function add(){
    return parseInt(num1) + parseInt(num2)
     
@@ -65,8 +72,7 @@ function multiply(){
 function divide(){
     return parseInt(num1) / parseInt(num2)
 }
-
-
+// end of hard
 
 
 // VH: Create a simple calculator that prompts the user for a number, an operator (either +, -, * or /) and another number, 
@@ -80,8 +86,8 @@ if (userInput = "+") {
     var num2 = window.prompt("Second Number: ")
 
     add(num1,num2)
-    // let sum= parseInt(num1) + parseInt(num2)
-    alert()}
+    // let sum= parseInt(num1) + parseInt(num2) 
+}
 else if (userInput = "-") {
     
     var num2 = window.prompt("Num2: ")
