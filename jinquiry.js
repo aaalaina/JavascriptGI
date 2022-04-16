@@ -78,23 +78,21 @@ function divide(){
 // VH: Create a simple calculator that prompts the user for a number, an operator (either +, -, * or /) and another number, 
 // and then uses the functions created in the hard challenge to output the value in sentence form. Example output: "3 + 4 = 7"
 
-// Consider using loops and arrays(?)
-var num1 = prompt("Enter a number: ")
-var operatorInput = prompt("Do you want to add, subtract, multiply, or divide? Use the corresponding operator.")
+// start of very hard
+let num1 = prompt("Enter a number: ")
+const userInput = prompt("Do you want to add, subtract, multiply, or divide? Use the corresponding operator.")
 
 if (userInput = "+") {
     var num2 = prompt("Second Number: ")
 
-   let sum = add(num1,num2)
-    // let sum= parseInt(num1) + parseInt(num2)
+   const sum = add(num1,num2)
     console.log(num1 + " + " + num2 + " = " + sum) 
 }
 else if (userInput = "-") {
     
     var num2 = prompt("Second Number: ")
 
-    let difference = subtract(num1,num2)
-    // let difference = parseInt(num1) - parseInt(num2)
+    const difference = subtract(num1,num2)
     console.log(num1 + " - " + num2 + " = " + difference)
 }
 else if (userInput = "*") { 
@@ -102,7 +100,7 @@ else if (userInput = "*") {
     var num2 = prompt("Second Number: ")
 
     
-  let product =  multiply(num1,num2)
+    const product =  multiply(num1,num2)
   console.log(num1 + " * " + num2 + " = " + product)
 }
 else if (userInput = "/") {
@@ -110,6 +108,7 @@ else if (userInput = "/") {
     var num2 = prompt("Second Number: ") 
 
     
-    let quotient = divide(num1,num2)
-    console.log(num1 + " + " + num2 + " = " + quotient)
+    const quotient = divide(num1,num2)
+    console.log(num1 + " / " + num2 + " = " + quotient)
 };
+// end of very hard
