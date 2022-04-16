@@ -52,18 +52,18 @@ console.log("You're talking at a normal volume.")
 // multiply() to multiply 2 numbers, and one called divide() to divide two numbers.
 
 function add(){
-   return num1 + num2
+   return parseInt(num1) + parseInt(num2)
     
 }
 function subtract(){
-   return num1 - num2
+   return parseInt(num1) - parseInt(num2)
 }
 function multiply(){
-   return num1 * num2
+   return parseInt(num1) * parseInt(num2)
      
 }
 function divide(){
-    return num1 / num2
+    return parseInt(num1) / parseInt(num2)
 }
 
 
@@ -79,22 +79,22 @@ var operatorInput = window.prompt("Do you want to add, subtract, multiply, or di
 if (userInput = "+") {
     var num2 = window.prompt("Second Number: ")
 
-    add()
+    add(num1,num2)
     // let sum= parseInt(num1) + parseInt(num2)
     alert()}
 else if (userInput = "-") {
     
     var num2 = window.prompt("Num2: ")
 
-    function subtract(num1,num2){
+    subtract(num1,num2)
     // let difference = parseInt(num1) - parseInt(num2)
-    alert("Your answer is " + difference)}}
+    alert("Your answer is " + difference)}
 else if (userInput = "*") { 
 
     var num2 = window.prompt("Num2: ")
 
     
-    let product = parseInt(num1) * parseInt(num2)
+    multiply(num1,num2)
     alert("Your answer is " + product)
 }
 else if (userInput = "/") {
@@ -102,5 +102,5 @@ else if (userInput = "/") {
     var num2 = window.prompt("Num2: ") 
 
     
-    let quotient = parseInt(num1) / parseInt(num2)
+    divide(num1,num2)
     alert("Your answer is " + quotient)};
